@@ -20,6 +20,9 @@
  .btn{display:inline-block;background:#3483fa;color:#fff;font-size:13px;padding:6px 12px;border-radius:6px}
  footer{text-align:center;font-size:11px;color:#777;padding:0 16px 24px}
  .cup{font-size:12px;color:#d6195b;font-weight:600}
+ .card.fim{display:none;opacity:.75} .acabou{font-size:13px;color:#a33}
+ #nada{display:none;max-width:560px;margin:0 auto 12px;padding:0 16px;color:#666;font-size:14px;text-align:center}
+ .achou{outline:3px solid #3483fa}
  .sug{display:block;max-width:560px;margin:0 auto 14px;width:calc(100% - 32px);box-sizing:border-box;padding:12px 14px;
    background:#fff3c4;border:2px dashed #f5b700;border-radius:12px;color:#5a4300;text-decoration:none;font-size:14px;text-align:center}
  #cupons{max-width:560px;margin:0 auto 14px;padding:14px 16px;background:#fff;border-radius:12px;
@@ -33,8 +36,9 @@
 sem custo extra pra você. Compra, pagamento e entrega são feitos direto no Mercado Livre.</p></header>
 <input id="busca" placeholder="Buscar: número da oferta ou produto" inputmode="search">
 <a class="sug" href="https://docs.google.com/forms/d/e/1FAIpQLSdF9FWKLSlK6RvuJ5R_XhO2Ptm-WltzxdMvYS5VAm3Fnkn2gA/viewform" target="_blank" rel="noopener">💡 Não achou o que queria? <b>Sugira um produto</b> que a gente procura pra você!</a>
+<p id="nada"></p>
 <main id="lista">
-      <a class="card" href="https://meli.la/2vjfnJ6" target="_blank" rel="nofollow sponsored noopener" id="o12">
+      <a class="card" href="https://meli.la/2vjfnJ6" target="_blank" rel="nofollow sponsored noopener" id="o12" data-num="12">
         <img src="https://http2.mlstatic.com/D_NQ_NP_2X_778316-MLB115759692685_082026-F.jpg" alt="" loading="lazy">
         <div class="info">
           <span class="num">#12</span><span class="off">-65%</span>
@@ -44,7 +48,7 @@ sem custo extra pra você. Compra, pagamento e entrega são feitos direto no Mer
           <span class="btn">Ver oferta</span>
         </div>
       </a>
-      <a class="card" href="https://meli.la/1stqFNa" target="_blank" rel="nofollow sponsored noopener" id="o11">
+      <a class="card" href="https://meli.la/1stqFNa" target="_blank" rel="nofollow sponsored noopener" id="o11" data-num="11">
         <img src="https://http2.mlstatic.com/D_NQ_NP_2X_943209-MLB95115260847_102025-F.jpg" alt="" loading="lazy">
         <div class="info">
           <span class="num">#11</span><span class="off">-70%</span>
@@ -54,7 +58,7 @@ sem custo extra pra você. Compra, pagamento e entrega são feitos direto no Mer
           <span class="btn">Ver oferta</span>
         </div>
       </a>
-      <a class="card" href="https://meli.la/2k6HatG" target="_blank" rel="nofollow sponsored noopener" id="o10">
+      <a class="card" href="https://meli.la/2k6HatG" target="_blank" rel="nofollow sponsored noopener" id="o10" data-num="10">
         <img src="https://http2.mlstatic.com/D_NQ_NP_2X_635962-MLB115896499289_082026-F.jpg" alt="" loading="lazy">
         <div class="info">
           <span class="num">#10</span><span class="off">-73%</span>
@@ -64,7 +68,7 @@ sem custo extra pra você. Compra, pagamento e entrega são feitos direto no Mer
           <span class="btn">Ver oferta</span>
         </div>
       </a>
-      <a class="card" href="https://meli.la/12rMd5S" target="_blank" rel="nofollow sponsored noopener" id="o9">
+      <a class="card" href="https://meli.la/12rMd5S" target="_blank" rel="nofollow sponsored noopener" id="o9" data-num="9">
         <img src="https://http2.mlstatic.com/D_NQ_NP_2X_721442-MLU74808648327_022024-F.jpg" alt="" loading="lazy">
         <div class="info">
           <span class="num">#9</span><span class="off">-39%</span>
@@ -74,7 +78,7 @@ sem custo extra pra você. Compra, pagamento e entrega são feitos direto no Mer
           <span class="btn">Ver oferta</span>
         </div>
       </a>
-      <a class="card" href="https://meli.la/1Qmzpg9" target="_blank" rel="nofollow sponsored noopener" id="o8">
+      <a class="card" href="https://meli.la/1Qmzpg9" target="_blank" rel="nofollow sponsored noopener" id="o8" data-num="8">
         <img src="https://http2.mlstatic.com/D_NQ_NP_2X_699777-MLB96745681409_102025-F.jpg" alt="" loading="lazy">
         <div class="info">
           <span class="num">#8</span><span class="off">-41%</span>
@@ -84,7 +88,7 @@ sem custo extra pra você. Compra, pagamento e entrega são feitos direto no Mer
           <span class="btn">Ver oferta</span>
         </div>
       </a>
-      <a class="card" href="https://meli.la/1EY3zkf" target="_blank" rel="nofollow sponsored noopener" id="o7">
+      <a class="card" href="https://meli.la/1EY3zkf" target="_blank" rel="nofollow sponsored noopener" id="o7" data-num="7">
         <img src="https://http2.mlstatic.com/D_NQ_NP_2X_998180-MLB117995940155_092026-F.jpg" alt="" loading="lazy">
         <div class="info">
           <span class="num">#7</span><span class="off">-51%</span>
@@ -94,7 +98,7 @@ sem custo extra pra você. Compra, pagamento e entrega são feitos direto no Mer
           <span class="btn">Ver oferta</span>
         </div>
       </a>
-      <a class="card" href="https://meli.la/21Yo2W7" target="_blank" rel="nofollow sponsored noopener" id="o6">
+      <a class="card" href="https://meli.la/21Yo2W7" target="_blank" rel="nofollow sponsored noopener" id="o6" data-num="6">
         <img src="https://http2.mlstatic.com/D_NQ_NP_2X_662917-MLA99956779189_112025-F.jpg" alt="" loading="lazy">
         <div class="info">
           <span class="num">#6</span><span class="off">-51%</span>
@@ -104,7 +108,7 @@ sem custo extra pra você. Compra, pagamento e entrega são feitos direto no Mer
           <span class="btn">Ver oferta</span>
         </div>
       </a>
-      <a class="card" href="https://meli.la/2RpVhE9" target="_blank" rel="nofollow sponsored noopener" id="o5">
+      <a class="card" href="https://meli.la/2RpVhE9" target="_blank" rel="nofollow sponsored noopener" id="o5" data-num="5">
         <img src="https://http2.mlstatic.com/D_NQ_NP_2X_762533-MLA106772767692_022026-F.jpg" alt="" loading="lazy">
         <div class="info">
           <span class="num">#5</span><span class="off">-52%</span>
@@ -114,7 +118,7 @@ sem custo extra pra você. Compra, pagamento e entrega são feitos direto no Mer
           <span class="btn">Ver oferta</span>
         </div>
       </a>
-      <a class="card" href="https://meli.la/1awf2PB" target="_blank" rel="nofollow sponsored noopener" id="o4">
+      <a class="card" href="https://meli.la/1awf2PB" target="_blank" rel="nofollow sponsored noopener" id="o4" data-num="4">
         <img src="https://http2.mlstatic.com/D_NQ_NP_2X_775128-MLA120018457362_112026-F.jpg" alt="" loading="lazy">
         <div class="info">
           <span class="num">#4</span><span class="off">-53%</span>
@@ -124,7 +128,7 @@ sem custo extra pra você. Compra, pagamento e entrega são feitos direto no Mer
           <span class="btn">Ver oferta</span>
         </div>
       </a>
-      <a class="card" href="https://meli.la/2JnhnWH" target="_blank" rel="nofollow sponsored noopener" id="o3">
+      <a class="card" href="https://meli.la/2JnhnWH" target="_blank" rel="nofollow sponsored noopener" id="o3" data-num="3">
         <img src="https://http2.mlstatic.com/D_NQ_NP_2X_913389-MLA84537447686_052025-F.jpg" alt="" loading="lazy">
         <div class="info">
           <span class="num">#3</span><span class="off">-54%</span>
@@ -134,7 +138,7 @@ sem custo extra pra você. Compra, pagamento e entrega são feitos direto no Mer
           <span class="btn">Ver oferta</span>
         </div>
       </a>
-      <a class="card" href="https://meli.la/1YBahHn" target="_blank" rel="nofollow sponsored noopener" id="o2">
+      <a class="card" href="https://meli.la/1YBahHn" target="_blank" rel="nofollow sponsored noopener" id="o2" data-num="2">
         <img src="https://http2.mlstatic.com/D_NQ_NP_2X_866784-MLA100061219317_122025-F.jpg" alt="" loading="lazy">
         <div class="info">
           <span class="num">#2</span><span class="off">-59%</span>
@@ -144,7 +148,7 @@ sem custo extra pra você. Compra, pagamento e entrega são feitos direto no Mer
           <span class="btn">Ver oferta</span>
         </div>
       </a>
-      <a class="card" href="https://meli.la/2RbH1cq" target="_blank" rel="nofollow sponsored noopener" id="o1">
+      <a class="card" href="https://meli.la/2RbH1cq" target="_blank" rel="nofollow sponsored noopener" id="o1" data-num="1">
         <img src="https://http2.mlstatic.com/D_NQ_NP_2X_994518-MLB118865581852_102026-F.jpg" alt="" loading="lazy">
         <div class="info">
           <span class="num">#1</span><span class="off">-70%</span>
@@ -156,12 +160,28 @@ sem custo extra pra você. Compra, pagamento e entrega são feitos direto no Mer
       </a></main>
 <a class="sug" href="https://docs.google.com/forms/d/e/1FAIpQLSdF9FWKLSlK6RvuJ5R_XhO2Ptm-WltzxdMvYS5VAm3Fnkn2gA/viewform" target="_blank" rel="noopener">💡 Quer um produto que não está aqui? <b>Peça aqui</b></a>
 <footer>Links de afiliado do Mercado Livre: posso receber comissão pelas compras, sem custo extra pra você.
-Preços e estoques podem mudar.<br>Atualizado em 22/11/2026 05:25</footer>
+Preços e estoques podem mudar.<br>Atualizado em 22/11/2026 05:26</footer>
 <script>
-document.getElementById('busca').addEventListener('input',e=>{
-  const q=e.target.value.toLowerCase().replace('#','').trim();
+const sem=t=>t.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+const nada=document.getElementById('nada');
+function buscar(valor){
+  const q=sem(valor).replace(/[#\s]+/g,' ').trim();
+  const soNumero=/^\d+$/.test(q.replace(/\s/g,''));
+  let achou=0;
   document.querySelectorAll('.card').forEach(c=>{
-    c.style.display=!q||c.id==='o'+q||c.textContent.toLowerCase().includes(q)?'':'none'})});
-if(location.hash){const el=document.getElementById(location.hash.replace('#','o'));
-  if(el)el.style.outline='3px solid #3483fa'}
+    let ok;
+    if(!q) ok=!c.classList.contains('fim');
+    else if(soNumero) ok=c.dataset.num===q.replace(/\s/g,'');
+    else ok=!c.classList.contains('fim')&&q.split(' ').every(p=>sem(c.querySelector('h2').textContent).includes(p));
+    c.style.display=ok?'flex':'none';
+    c.classList.toggle('achou',ok&&soNumero);
+    if(ok)achou++;
+  });
+  nada.style.display=q&&!achou?'block':'none';
+  nada.textContent=soNumero?'Não achei a oferta #'+q+' 😕 Ela pode ter acabado. Dá uma olhada nas outras!'
+                           :'Nenhuma oferta com "'+valor+'". Que tal pedir esse produto no botão de sugestão? 💡';
+}
+document.getElementById('busca').addEventListener('input',e=>buscar(e.target.value));
+if(location.hash){const n=location.hash.replace(/\D/g,'');if(n){document.getElementById('busca').value=n;buscar(n);
+  const el=document.getElementById('o'+n);if(el)el.scrollIntoView({block:'center'});}}
 </script></body></html>
